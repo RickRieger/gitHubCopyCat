@@ -6,7 +6,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: graphik;
+  font-family: 'Open Sans', arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 400;
@@ -15,7 +15,7 @@ body {
 #header b {
   display: flex;
   background-color: rgb(54, 40, 107);
-  width: 100vw;
+  width: 100%;
   height: 6vh;
   color: rgb(220, 218, 218);
   justify-content: center;
@@ -33,11 +33,11 @@ top section */
 
 #food {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 94vh;
 }
 #burger {
-  width: 50vw;
+  width: 50%;
   height: 94vh;
   display: flex;
   position: relative;
@@ -68,7 +68,7 @@ top section */
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 50%;
   align-items: baseline;
   padding: 64px 100px;
   flex: 0 0 50%;
@@ -82,7 +82,7 @@ top section */
   display: flex;
   flex-direction: row-reverse;
 }
-#perksapp > `div{
+#perksApp > div {
   display: flex;
   
 }
@@ -94,11 +94,13 @@ a {
   line-height: 1.44359;
   border: 0px;
   text-decoration: none;
-  font-family: 'Open Sans Bold', arial;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
 }
 
 h1 {
-  font-family: 'Open Sans Bold', arial;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
   font-size: 3vw;
   line-height: 1.15;
   display: block;
@@ -112,7 +114,8 @@ input {
   width: 300px;
   height: 45px;
   display: inline-block;
-  border-radius: 1px solid #8f8fa1;
+  border: 1px solid #8f8fa1;
+  border-radius: 4px;
   margin-right: 10px;
   padding: 10px 16px;
 }
@@ -163,7 +166,7 @@ button:active {
   align-items:center;
   padding: 24px;
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
   height: 37vh;
 }
 
@@ -183,7 +186,7 @@ button:active {
   display: flex;
   justify-content: center;
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 53vh;
   margin-top: 100px;
   bottom: 0px;
@@ -196,10 +199,16 @@ button:active {
   align-items: center;
   max-width: 580px;
   align-items: baseline;
+  padding: 0 24px;
+}
+#pickupDelivery img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
 }
 h3 {
-  font-family: 'Open Sans Bold', arial;
-  font-weight: 600;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.27993;
   margin-bottom: 10px;
@@ -211,8 +220,9 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   background-color: #efefef;
-  width: 100vw;
-  height: 22vh;
+  width: 100%;
+  min-height: 22vh;
+  padding: 24px;
 }
 #about > div {
   display: flex;
@@ -239,8 +249,8 @@ h3 {
   background-color: #3232aa;
   position:relative;
   color: #efefef;
-  width: 100vw;
-  height: 150vh;
+  width: 100%;
+  padding-bottom: 48px;
 }
 
 #section1-footer {
@@ -261,7 +271,7 @@ h3 {
   padding: 0px 12px;
 }
 #section1div>a{
-  display:inline-ß6block;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -271,7 +281,7 @@ li{
   margin-top:10px;
 }
 li>a{
-  font-family: graphik;
+  font-family: 'Open Sans', arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 400;
@@ -294,7 +304,7 @@ li>a{
     color: rgb(255, 255, 255);
     background: rgb(0, 112, 235);
     border-color: rgb(0, 112, 235);
-    font-family: grubhubsans-bold;
+    font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
     font-size: 15.4px;
     line-height: 1.54;
@@ -321,4 +331,7 @@ li>a{
 }
 h4{
   font-size: 1.3em;
+}
+#footer ul + h4 {
+  margin-top: 24px;
 }

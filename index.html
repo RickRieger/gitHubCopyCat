@@ -3,171 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DemoEats: a student layout project</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://allfont.net/allfont.css?fonts=open-sans-bold"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
-      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
   <body>
     <div id="header">
       <b>
-        Your health and safety is our priority, from restaurant to doorstep
-        &nbsp
-        <a href="#">Learn More</a></b
+        Student practice project (Code Immersives, 2021). DemoEats is a made-up brand, not a real service.
+        &nbsp;
+        <a href="https://github.com/RickRieger/gitHubCopyCat">See the code</a></b
       >
     </div>
     <div id="food">
       <div id="burger">
         <div>
-          <img src="assets/burger.webp" alt="burger" id="burger-img" />
-          <img src="assets/treatYourself.webp" alt="treat" id="treat-img" />
-          <img src="assets/grubhub.svg" alt="logo" id="logo-img" />
+          <img src="assets/hero-burger.jpg" alt="Cheeseburger with lettuce on a sesame bun" id="burger-img" />
+          <span id="logo-img">DemoEats</span>
         </div>
       </div>
       <div id="findFood">
         <div id="perksApp">
           <div>
-            <a href="#">Get Perks in the app</a>&nbsp&nbsp &nbsp 
-            <a href="#">Sign in</a>
+            <a href="#about">About this project</a>
           </div>
         </div>
         <div id="input">
           <div>
-            <h1><strong>Order food delivery you’ll love</strong></h1>
+            <h1><strong>Find something good to eat tonight</strong></h1>
 
             <input
               type="text"
               placeholder="Enter street address or zipcode"
               id="subdomain"
+              aria-label="Street address or zipcode (demo only)"
             />
-            <button>Find food</button>
+            <button type="button">Find food</button>
           </div>
         </div>
       </div>
     </div>
     <div id="qualities">
-      
+
         <div class="items">
-          <div class="img"><img src="assets/store-1.svg" alt="store" /></div>
+          <div class="img"><i class="fas fa-store feature-icon" aria-hidden="true"></i></div>
           <div class="under">
-            <h4>Local favorites</h4>
+            <h4>Neighborhood spots</h4>
             <span
-              >Satisfy any craving with delivery from popular neighborhood
-              restaurants and chains. Reorder go-tos or find something
-              new.</span
+              >Browse the corner diner, the taco truck and the pizza place everyone argues about, all in one list.</span
             >
           </div>
         </div>
         <div class="items">
-          <div class="img"><img src="assets/coins.webp" alt="coins" id="coins-img" /></div>
+          <div class="img"><i class="fas fa-hand-holding-heart feature-icon" aria-hidden="true"></i></div>
           <div class="under">
-            <h4>Support Black entrepreneurs</h4>
+            <h4>Support local kitchens</h4>
             <span
-              >Donate your change to the Feed the Soul Foundation at checkout to
-              help provide business development resources and support for the
-              Black culinary community.</span
+              >Round up your order to help small, family-run restaurants in your area.</span
             >
           </div>
         </div>
         <div class="items">
-          <div class="img"><img src="assets/diamond.svg" alt="diamond" /></div>
+          <div class="img"><i class="fas fa-gem feature-icon" aria-hidden="true"></i></div>
           <div class="under">
-            <h4>Exclusive Perks</h4>
+            <h4>Rewards</h4>
             <span
-              >Discover more deals and restaurant rewards near you. Cash in on
-              Perks and get $100s in savings.</span>
+              >Earn points on every order and trade them in for free sides and desserts.</span>
           </div>
         </div>
       </div>
     </div>
     <div id="pickupDelivery">
-      <div><h3>Pickup or delivery from restaurants near you</h3>
-        <p>Explore restaurants that deliver near you, or try yummy takeout fare. With a place for every taste, it’s easy to find food you crave, and order online or through the Grubhub app. Find great meals fast with lots of local menus. Enjoy eating the convenient way with places that deliver to your door.</p>
+      <div><h3>Pickup or delivery, your call</h3>
+        <p>Order ahead and grab it on the way home, or have it brought to your door. Search by cuisine, dish or restaurant, compare menus side by side, and save your favorites for next time.</p>
       </div>
-      <div><img src="assets/2girls1burger.webp" alt="2 girls eating"></div>
+      <div><img src="assets/friends-eating.jpg" alt="Friends sharing burgers and fries at a diner table"></div>
     </div>
     <div id="about">
-      <div><h2>About Grubhub</h2></div>
-      <div><p>Grubhub helps you find and order food from wherever you are. How it works: you type in an address, we tell you the restaurants that deliver to that locale as well as showing you droves of pickup restaurants near you. Want to be more specific? Search by cuisine, restaurant name or menu item. We'll filter your results accordingly. When you find what you're looking for, you can place your order online or by phone, free of charge. Oh, and we also give you access to reviews, coupons, special deals and a 24/7 customer care team that tracks each order and makes sure you get exactly what you want.</p></div>
+      <div><h2>About this project</h2></div>
+      <div><p>DemoEats isn't a real company. This page is a front-end layout exercise I built at the Code Immersives bootcamp in February 2021, modeled on the structure of a food-delivery homepage: a split hero section, a three-column feature row, an image-and-text section and a multi-column footer, all with HTML and CSS Flexbox. The search box and links are placeholders.</p></div>
     </div>
     <div id="footer">
       <div id="section1-footer">
         <div id="section1div">
-          <h4>Sign up for special offers</h4>
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          <form action="/action_page.php">
-            <label for="fname">Email address</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Zip code</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <button>Count me in!</button>
-          </form> 
+          <h4>About this demo</h4>
+          <ul>
+            <li>Built with HTML and CSS Flexbox</li>
+            <li>Code Immersives, NYC (2021)</li>
+            <li><a href="https://github.com/RickRieger/gitHubCopyCat">Source code on GitHub</a></li>
+          </ul>
         </div>
         <div>
           <h4>Get to know us</h4>
-          &nbsp;
-          &nbsp;
-          &nbsp;
           <ul>
-           <li><a href="#">About Grubhub</a></li>
+           <li><a href="#">About DemoEats</a></li>
            <li><a href="#">Our apps</a></li>
            <li><a href="#">Our blog</a></li>
-           <li><a href="#">Our tech blog, <br>
-            Grubhub Bytes</a></li>
            <li><a href="#">Careers</a></li>
-           <li><a href="#">Investor relations</a></li>
            <li><a href="#">News</a></li>
           </ul>
         </div>
         <div><h4>Useful links</h4>
-          &nbsp;
-          &nbsp;
-          &nbsp;
           <ul>
            <li><a href="#">Gift cards</a></li>
-           <li><a href="#">Grubhub+</a></li>
-           <li><a href="#">Grubhub Perks</a></li>
+           <li><a href="#">Rewards</a></li>
            <li><a href="#">Help</a></li>
            <li><a href="#">Catering</a></li>
-           <li><a href="#">Student Discounts</a></li>
-           <li><a href="#">Keyboard Shortcuts</a></li>
-           <li><a href="#">Answers</a></li>
+           <li><a href="#">Student discounts</a></li>
           </ul>
           <h4>Connect with us</h4>
-          &nbsp;
-          &nbsp;
-          &nbsp;
           <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">YouTube</a></li>
           </ul>
-        
         </div>
         <div><h4>Partner with us</h4>
-          
-          <button class="buttons">For resturants&nbsp;&nbsp;<i style='font-size:16px;color:white' class='fas'>&#xf105;</i></button>
-          
-          <button class="buttons">For drivers&nbsp;&nbsp;<i style='font-size:16px;color:white' class='fas'>&#xf105;</i></button>
-       
-          <button class="buttons">For crperate accounts&nbsp;&nbsp;<i style='font-size:16px;color:white' class='fas'>&#xf105;</i></button>
-       
-          <button class="buttons">Become an Affiliate&nbsp;&nbsp;<i style='font-size:16px;color:white' class='fas'>&#xf105;</i></button>
 
-        
+          <button class="buttons" type="button">For restaurants&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+          <button class="buttons" type="button">For drivers&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+          <button class="buttons" type="button">For corporate accounts&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+          <button class="buttons" type="button">Become an affiliate&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
         </div>
       </div>
-      <div></div>
-      <div></div>
     </div>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </body>
 </html>

@@ -50,17 +50,18 @@ top section */
   width: 100%;
   object-fit: cover;
 }
-#treat-img {
-  max-width: 340px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 #logo-img {
-  max-width: 214px;
   position: absolute;
   top: 63px;
   left: 86px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: rgba(54, 40, 107, 0.9);
+  color: #fff;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 #findFood {
   box-sizing: border-box;
@@ -166,9 +167,10 @@ button:active {
   height: 37vh;
 }
 
-#coins-img {
-  width: 100px;
-  height: 100px;
+.feature-icon {
+  font-size: 64px;
+  color: rgb(54, 40, 107);
+  margin-bottom: 16px;
 }
 .items {
   text-align: center;

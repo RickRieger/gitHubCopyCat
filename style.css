@@ -6,7 +6,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: graphik;
+  font-family: 'Open Sans', arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 400;
@@ -15,7 +15,7 @@ body {
 #header b {
   display: flex;
   background-color: rgb(54, 40, 107);
-  width: 100vw;
+  width: 100%;
   height: 6vh;
   color: rgb(220, 218, 218);
   justify-content: center;
@@ -33,11 +33,11 @@ top section */
 
 #food {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 94vh;
 }
 #burger {
-  width: 50vw;
+  width: 50%;
   height: 94vh;
   display: flex;
   position: relative;
@@ -50,24 +50,25 @@ top section */
   width: 100%;
   object-fit: cover;
 }
-#treat-img {
-  max-width: 340px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 #logo-img {
-  max-width: 214px;
   position: absolute;
   top: 63px;
   left: 86px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: rgba(54, 40, 107, 0.9);
+  color: #fff;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 #findFood {
   box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 50%;
   align-items: baseline;
   padding: 64px 100px;
   flex: 0 0 50%;
@@ -81,7 +82,7 @@ top section */
   display: flex;
   flex-direction: row-reverse;
 }
-#perksapp > `div{
+#perksApp > div {
   display: flex;
   
 }
@@ -93,11 +94,13 @@ a {
   line-height: 1.44359;
   border: 0px;
   text-decoration: none;
-  font-family: 'Open Sans Bold', arial;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
 }
 
 h1 {
-  font-family: 'Open Sans Bold', arial;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
   font-size: 3vw;
   line-height: 1.15;
   display: block;
@@ -111,7 +114,8 @@ input {
   width: 300px;
   height: 45px;
   display: inline-block;
-  border-radius: 1px solid #8f8fa1;
+  border: 1px solid #8f8fa1;
+  border-radius: 4px;
   margin-right: 10px;
   padding: 10px 16px;
 }
@@ -162,13 +166,14 @@ button:active {
   align-items:center;
   padding: 24px;
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
   height: 37vh;
 }
 
-#coins-img {
-  width: 100px;
-  height: 100px;
+.feature-icon {
+  font-size: 64px;
+  color: rgb(54, 40, 107);
+  margin-bottom: 16px;
 }
 .items {
   text-align: center;
@@ -181,7 +186,7 @@ button:active {
   display: flex;
   justify-content: center;
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 53vh;
   margin-top: 100px;
   bottom: 0px;
@@ -194,10 +199,16 @@ button:active {
   align-items: center;
   max-width: 580px;
   align-items: baseline;
+  padding: 0 24px;
+}
+#pickupDelivery img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
 }
 h3 {
-  font-family: 'Open Sans Bold', arial;
-  font-weight: 600;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.27993;
   margin-bottom: 10px;
@@ -209,8 +220,9 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   background-color: #efefef;
-  width: 100vw;
-  height: 22vh;
+  width: 100%;
+  min-height: 22vh;
+  padding: 24px;
 }
 #about > div {
   display: flex;
@@ -237,8 +249,8 @@ h3 {
   background-color: #3232aa;
   position:relative;
   color: #efefef;
-  width: 100vw;
-  height: 150vh;
+  width: 100%;
+  padding-bottom: 48px;
 }
 
 #section1-footer {
@@ -259,7 +271,7 @@ h3 {
   padding: 0px 12px;
 }
 #section1div>a{
-  display:inline-ß6block;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -269,7 +281,7 @@ li{
   margin-top:10px;
 }
 li>a{
-  font-family: graphik;
+  font-family: 'Open Sans', arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 400;
@@ -292,7 +304,7 @@ li>a{
     color: rgb(255, 255, 255);
     background: rgb(0, 112, 235);
     border-color: rgb(0, 112, 235);
-    font-family: grubhubsans-bold;
+    font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
     font-size: 15.4px;
     line-height: 1.54;
@@ -319,4 +331,80 @@ li>a{
 }
 h4{
   font-size: 1.3em;
+}
+#footer ul + h4 {
+  margin-top: 24px;
+}
+
+/* Phones and small tablets: stack the side-by-side sections vertically.
+   (Added in 2026; the original layout only worked at desktop widths.) */
+@media (max-width: 760px) {
+  #header b {
+    height: auto;
+    padding: 8px 16px;
+    font-size: 12px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  #header a {
+    font-size: 12px;
+  }
+  #food,
+  #qualities,
+  #pickupDelivery,
+  #about {
+    flex-direction: column;
+    height: auto;
+  }
+  #burger {
+    width: 100%;
+    height: 40vh;
+  }
+  #logo-img {
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+  }
+  #findFood {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  #perksApp {
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  input {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  button {
+    width: 100%;
+  }
+  .items {
+    margin: 24px 0 0 0;
+  }
+  #pickupDelivery {
+    margin-top: 40px;
+    gap: 24px;
+  }
+  #pickupDelivery > div {
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  #section1-footer {
+    margin: 0;
+    padding: 24px 16px;
+  }
+  #section1-footer > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
 }

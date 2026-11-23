@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DemoEats: a student layout project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <b>
+        Student practice project (Code Immersives, 2021). DemoEats is a made-up brand, not a real service.
+        &nbsp;
+        <a href="https://github.com/RickRieger/gitHubCopyCat">See the code</a></b
+      >
+    </div>
+    <div id="food">
+      <div id="burger">
+        <div>
+          <img src="assets/hero-burger.jpg" alt="Cheeseburger with lettuce on a sesame bun" id="burger-img" />
+          <span id="logo-img">DemoEats</span>
+        </div>
+      </div>
+      <div id="findFood">
+        <div id="perksApp">
+          <div>
+            <a href="#about">About this project</a>
+          </div>
+        </div>
+        <div id="input">
+          <div>
+            <h1><strong>Find something good to eat tonight</strong></h1>
+
+            <input
+              type="text"
+              placeholder="Enter street address or zipcode"
+              id="subdomain"
+              aria-label="Street address or zipcode (demo only)"
+            />
+            <button type="button">Find food</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="qualities">
+
+        <div class="items">
+          <div class="img"><i class="fas fa-store feature-icon" aria-hidden="true"></i></div>
+          <div class="under">
+            <h4>Neighborhood spots</h4>
+            <span
+              >Browse the corner diner, the taco truck and the pizza place everyone argues about, all in one list.</span
+            >
+          </div>
+        </div>
+        <div class="items">
+          <div class="img"><i class="fas fa-hand-holding-heart feature-icon" aria-hidden="true"></i></div>
+          <div class="under">
+            <h4>Support local kitchens</h4>
+            <span
+              >Round up your order to help small, family-run restaurants in your area.</span
+            >
+          </div>
+        </div>
+        <div class="items">
+          <div class="img"><i class="fas fa-gem feature-icon" aria-hidden="true"></i></div>
+          <div class="under">
+            <h4>Rewards</h4>
+            <span
+              >Earn points on every order and trade them in for free sides and desserts.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pickupDelivery">
+      <div><h3>Pickup or delivery, your call</h3>
+        <p>Order ahead and grab it on the way home, or have it brought to your door. Search by cuisine, dish or restaurant, compare menus side by side, and save your favorites for next time.</p>
+      </div>
+      <div><img src="assets/friends-eating.jpg" alt="Friends sharing burgers and fries at a diner table"></div>
+    </div>
+    <div id="about">
+      <div><h2>About this project</h2></div>
+      <div><p>DemoEats isn't a real company. This page is a front-end layout exercise I built at the Code Immersives bootcamp in February 2021, modeled on the structure of a food-delivery homepage: a split hero section, a three-column feature row, an image-and-text section and a multi-column footer, all with HTML and CSS Flexbox. The search box and links are placeholders.</p></div>
+    </div>
+    <div id="footer">
+      <div id="section1-footer">
+        <div id="section1div">
+          <h4>About this demo</h4>
+          <ul>
+            <li>Built with HTML and CSS Flexbox</li>
+            <li>Code Immersives, NYC (2021)</li>
+            <li><a href="https://github.com/RickRieger/gitHubCopyCat">Source code on GitHub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get to know us</h4>
+          <ul>
+           <li><a href="#">About DemoEats</a></li>
+           <li><a href="#">Our apps</a></li>
+           <li><a href="#">Our blog</a></li>
+           <li><a href="#">Careers</a></li>
+           <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div><h4>Useful links</h4>
+          <ul>
+           <li><a href="#">Gift cards</a></li>
+           <li><a href="#">Rewards</a></li>
+           <li><a href="#">Help</a></li>
+           <li><a href="#">Catering</a></li>
+           <li><a href="#">Student discounts</a></li>
+          </ul>
+          <h4>Connect with us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div><h4>Partner with us</h4>
+
+          <button class="buttons" type="button">For restaurants&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+          <button class="buttons" type="button">For drivers&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+          <button class="buttons" type="button">For corporate accounts&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+          <button class="buttons" type="button">Become an affiliate&nbsp;&nbsp;<i class="fas fa-angle-right" aria-hidden="true"></i></button>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

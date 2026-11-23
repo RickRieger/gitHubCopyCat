@@ -335,3 +335,76 @@ h4{
 #footer ul + h4 {
   margin-top: 24px;
 }
+
+/* Phones and small tablets: stack the side-by-side sections vertically.
+   (Added in 2026; the original layout only worked at desktop widths.) */
+@media (max-width: 760px) {
+  #header b {
+    height: auto;
+    padding: 8px 16px;
+    font-size: 12px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  #header a {
+    font-size: 12px;
+  }
+  #food,
+  #qualities,
+  #pickupDelivery,
+  #about {
+    flex-direction: column;
+    height: auto;
+  }
+  #burger {
+    width: 100%;
+    height: 40vh;
+  }
+  #logo-img {
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+  }
+  #findFood {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  #perksApp {
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  input {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  button {
+    width: 100%;
+  }
+  .items {
+    margin: 24px 0 0 0;
+  }
+  #pickupDelivery {
+    margin-top: 40px;
+    gap: 24px;
+  }
+  #pickupDelivery > div {
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  #section1-footer {
+    margin: 0;
+    padding: 24px 16px;
+  }
+  #section1-footer > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+}
